@@ -43,7 +43,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setEnergy((prevEnergy) => Math.min(prevEnergy + 1, 1000));
-    }, 1500);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
@@ -78,27 +78,27 @@ const Home = () => {
   <div className="w-full flex flex-row md:flex-row justify-between gap-2">
     <div className="w-full md:w-1/3 flex items-center justify-start max-w-[8rem]">
       <div className="flex items-center justify-center">
-        <img src={highVoltage} width={44} height={44} alt="High Voltage" />
+        <img src={highVoltage} className='w-[25px] h-[25px] md:w-[44px] md:h-[44px]' alt="High Voltage" />
         <div className="ml-2 text-left">
-          <span className="text-white text-2xl font-bold block">{energy}</span>
+          <span className="text-white sm:text-base sm:font-normal md:text-2xl md:font-bold block">{energy}</span>
           <span className="text-white text-lg opacity-75">/ 1000</span>
         </div>
       </div>
     </div>
-    <div className="flex-grow flex items-center max-w-[15rem] text-sm">
-      <div className="w-full bg-white py-4 rounded-2xl flex justify-around text-black font-semibold">
+    <div className="flex-grow flex items-center max-w-[12rem] md:max-w-[15rem]  text-sm">
+      <div className="w-full bg-white  py-4 rounded-2xl flex justify-around text-black font-semibold">
         <Link to="/friends" className="flex flex-col items-center gap-1">
-          <img src={bear} width={24} height={24} alt="Friends" />
+          <img src={bear} className='w-[18px] h-[18px] md:w-[24px] md:h-[24px]' alt="Friends" />
           <span>Frens</span>
         </Link>
         <div className="h-12 w-[2px] bg-gray-600"></div>
         <Link to="/" className="flex flex-col items-center gap-1">
-          <img src={coin} width={24} height={24} alt="Earn" />
+          <img src={coin} className='w-[18px] h-[18px] md:w-[24px] md:h-[24px]'  alt="Earn" />
           <span>Earn</span>
         </Link>
         <div className="h-12 w-[2px] bg-gray-600"></div>
         <Link to="/boost" className="flex flex-col items-center gap-1">
-          <img src={rocket} width={24} height={24} alt="Boosts" />
+          <img src={rocket} className='w-[18px] h-[18px] md:w-[24px] md:h-[24px]'  alt="Boosts" />
           <span>Boosts</span>
         </Link>
       </div>
