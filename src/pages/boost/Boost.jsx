@@ -2,7 +2,7 @@ import React from 'react'
 
 const Boost = () => {
   return (
-    <div>Boost</div>
+    <div>Boost is comming soon</div>
   )
 }
 
