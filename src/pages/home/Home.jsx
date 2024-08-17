@@ -7,7 +7,7 @@ import coin from '../../assets/images/coin.png'
 import trophy from '../../assets/images/trophy.png'
 import rocket from '../../assets/images/rocket.png'
 import joncoin from '../../assets/images/jon2.png'
-import highVoltage from '../../assets/images/high-Voltage.png'
+import highVoltage from '../../assets/images/voltage.png'
 
 
 const Home = () => {
